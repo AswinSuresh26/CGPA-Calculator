@@ -1,16 +1,16 @@
 // Function to calculate GPA
 function calculateGradePointAverage({ subj1, subj2, subj3, subj4, subj5 }) {
  const totalGradePoints = subj1 + subj2 + subj3 + subj4 + subj5;
- const creditHours = 5;
- const gpa = totalGradePoints / creditHours;
+ const creditWeight1 = 5;
+ const gpa = totalGradePoints / creditWeight1;
  return gpa.toFixed(2);
 }
 
 // Function to calculate CGPA
 function calculateCumulativeGradePointAverage({ subj1, subj2, subj3, subj4, subj5 }) {
- const creditWeight = 4;
+ const creditWeight2 = 4;
  const totalGradePoints = subj1 + subj2 + subj3 + subj4 + subj5;
- const cgpa = totalGradePoints / (5 * creditWeight);
+ const cgpa = totalGradePoints / (5 * creditWeight2);
  return cgpa.toFixed(2);
 }
 
